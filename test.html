@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trust Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/textfield/outlined-text-field.js";
+      import "@material/web/button/filled-button.js";
+
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./res/logo.png" alt="logo" />
+        <h1>Ratsa Yedukondala Memorial</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#vision">Vision & Mission</a></li>
+          <li><a href="#founder">Founder's Message</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#library">Central Library</a></li>
+          <li><a href="#reading">Reading Room</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#trustees">Trustees Details</a></li>
+          <li><a href="#staff">Staff Details</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#vision" onclick="toggleMenu()">Vision & Mission</a></li>
+        <li><a href="#founder" onclick="toggleMenu()">Founder's Message</a></li>
+        <li><a href="#staff" onclick="toggleMenu()">Staff Details</a></li>
+        <li><a href="#activities" onclick="toggleMenu()">Activities</a></li>
+        <li><a href="#library" onclick="toggleMenu()">Central Library</a></li>
+        <li><a href="#reading" onclick="toggleMenu()">Reading Room</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+        <li><a href="#trustees" onclick="toggleMenu()">Trustees Details</a></li>
+        <li><a href="#location" onclick="toggleMenu()">Location</a></li>
+      </ul>
+    </div>
+
+    <section id="home">
+      <div class="container">
+        <img src="./res/logo.png" alt="" />
+        <h1>Ratsa Yedukondala Memorial Education and charitable trust</h1>
+      </div>
+      <div id="photoscroll">
+        <img src="https://placehold.co/1200x400" alt="" />
+        <img src="https://placehold.co/1200x400" alt="" />
+        <img src="https://placehold.co/1200x400" alt="" />
+        <img src="https://placehold.co/1200x400" alt="" />
+        <img src="https://placehold.co/1200x400" alt="" />
+      </div>
+    </section>
+
+    <section id="vision">
+      <div>
+        <h2>Vision & Mission</h2>
+        <p>
+          Our vision is to create a society empowered through education and
+          wisdom.
+        </p>
+      </div>
+    </section>
+
+    <section id="founder">
+      <div>
+        <h2>Founder's Message</h2>
+        <p>
+          Our founder believed that education is the strongest foundation for a
+          better future.
+        </p>
+      </div>
+    </section>
+
+    <section id="staff">
+      <div>
+        <h2>Staff Details</h2>
+        <p>Our dedicated team works tirelessly for the community.</p>
+      </div>
+    </section>
+
+    <section id="activities">
+      <div>
+        <h2>Activities</h2>
+        <p>
+          We conduct educational programs, reading sessions, and cultural
+          activities.
+        </p>
+      </div>
+    </section>
+
+    <section id="library">
+      <div>
+        <h2>Central Library</h2>
+        <p>A place of books, learning and research for everyone.</p>
+      </div>
+    </section>
+
+    <section id="reading">
+      <div>
+        <h2>Reading Room</h2>
+        <p>A quiet and comfortable place to read and study.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div>
+        <h2>Education</h2>
+        <p>We offer free educational support and training programs.</p>
+      </div>
+    </section>
+
+    <section id="trustees">
+      <div>
+        <h2>Trustees Details</h2>
+        <p>Meet the people who guide and manage the trust.</p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <div id="contact" class="flex">
+          <h3>Contact Us</h3>
+          <md-outlined-text-field
+            type="text"
+            label="Enter Name"
+            value="  "
+            class="tf"
+            style="anchor-name: --item1"
+          ></md-outlined-text-field>
+          <pre onclick="focuss(1)" class="tfp" style="--i: 0">
+  ex: Raju,Ramu</pre
+          >
+          <md-outlined-text-field
+            type="tel"
+            label="Enter Number"
+            value="  "
+            class="tf"
+          >
+          </md-outlined-text-field>
+          <pre onclick="focuss(2)" class="tfp" style="--i: 1">  9550368103</pre>
+          <md-outlined-text-field
+            type="text"
+            label="message"
+            value="  "
+            class="tf"
+            style="background-color: transparent"
+          ></md-outlined-text-field>
+          <pre onclick="focuss(3)" class="tfp" style="--i: 2">
+  your content</pre
+          >
+          <button class="sub">Send Message</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <div id="locinfo">
+        <pre><pre>Adrress:</pre> something, kakianada, andhrapradesh</pre>
+        <pre><pre>Email:</pre> info@ratsayedukondalatrust.com</pre>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            class="gmap_iframe"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=kakinada&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe
+          ><a href="https://nicemail.cc">nicemail</a>
+        </div>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            width: 80vw;
+            height: 30vh;
+            margin: auto 0;
+          }
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            width: 100%;
+            height: 100%;
+          }
+          .gmap_iframe {
+            width: 100% !important;
+            height: 100% !important;
+          }
+        </style>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Ratsa YeduKondala Memorial. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("active");
+      }
+      function focuss(num) {
+        console.log(num);
+        document.getElementsByClassName("tf")[num - 1].focus();
+        document.getElementsByClassName("tfp")[num - 1].style.visibility =
+          "hidden";
+      }
+    </script>
+  </body>
+</html>
