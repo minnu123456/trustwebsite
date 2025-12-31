@@ -9,7 +9,7 @@
   --p1: #4d2b8c;
   --p2: #85409d;
   --p3: #eea727;
-  --p4: #fff9a2;
+  --p4: #fff8dc;
 }
 
 html {
@@ -193,7 +193,7 @@ section p {
 
 footer {
   height: 5vh;
-  background-color: var(--p4);
+  background-color: var(--p3);
   font-size: 14px;
   text-align: center;
   display: flex;
@@ -295,6 +295,7 @@ footer {
   #location {
     display: flex;
     flex-direction: column;
+    padding: 60px 10%;
   }
 
   #locinfo {
