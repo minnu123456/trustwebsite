@@ -2,13 +2,11 @@ header {
   position: fixed;
   top: 0;
   height: auto;
-  padding: 12px;
   background-color: var(--p2);
   color: var(--p3);
   anchor-name: --header;
   z-index: 999;
   width: 100vw;
-  padding-bottom: 0;
 }
 header > ul {
   position: fixed;
@@ -86,11 +84,13 @@ header > ul {
 #h-left {
   height: auto;
   width: auto;
+  padding: 12px 0px;
 }
 
 #h-down {
   width: 100%;
-  padding: 0 8px;
+  background-color: var(--p3);
+  color: white;
 }
 
 #h-left img {
