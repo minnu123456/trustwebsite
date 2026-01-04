@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --p1: #e1ad01;
+  --p2: #ffd84d;
+  --p3: #0b1c3d;
+  --p4: #0000004f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#slide {
+  position-anchor: --header;
+  position: relative;
+  margin-top: anchor-size(height);
+  height: 200vh;
+  width: 100vw;
+}
+
+#track {
+}
+
+#track img {
+  width: 400px;
+  height: auto;
+}
+
+@keyframes dropDown {
+  0% {
+    max-height: 0vh;
+  }
+  100% {
+    max-height: 50vh;
+  }
+}
+
+@keyframes subDrop {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 50vh;
+  }
+}
