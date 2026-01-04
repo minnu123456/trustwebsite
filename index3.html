@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <meta name="description" content="A modern web page" />
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="icon" href="./res/favicon.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net">
+    <script src="./textFit.js"></script>
+
+  </head>
+  <body>
+    <header class="flex flex-col justify-between items-center">
+      <div id="h-down"  class="flex flex-row justify-around items-center">
+        <button>Contact Us</button>
+        <button>Donate</button>      
+        <button
+          onclick="dropDown()"
+          style="font-size: 20px; border: none"
+          class="flex flex-row items-center"
+        >
+        &#9776; <p style="font-size: 15px;">   Menu</p>
+      </button>
+      </div>
+      <div id="h-left" class="flex flex-row justify-between items-center">
+        <img src="./res/logo.png" alt="logo image" />
+        <div>
+        <h1>
+          Ratsa Yedukondala Memorial <br>
+          Educational & Charitable Trust
+        </h1>
+        </div>
+      </div>
+      <ul id="dropdown">
+        <li>
+          <div class="m">About Us<span class="arrow"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li" ><a href="./sections/vision&mission.html">Vision & Mission</a></li>
+            <li class="sub_dropdown_li"><a href="./sections/aims&objective.html">Aims & Objectives</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="m">Our Works<span class="arrow"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li"><a href="./sections/healthServices.html">Medical & Health Services</a></li>
+            <li class="sub_dropdown_li"><a href="./sections/educationalInitiatives.html">Educational initiatives</a></li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/socialWelfare.html">Social welfare & Community development</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/sustainableDevelopment.html">Sustainable development & Environmental initiatives</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/womenEmpowerment&skillDevelopment.html">Women Empowerment & Skill development</a>
+            </li>
+            <li class="sub_dropdown_li">Sports & Yoga</li>
+            <li class="sub_dropdown_li">idk disaster releif</li>
+            <li class="sub_dropdown_li"><a href="./sections/Digital_&_Technological_Empowerment.html">Digital & Technological Empowerment</a></li>
+            <li class="sub_dropdown_li">idk Institutions</li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/Governance.html">Governance, Transparency & accountability</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="m">Insights<span class="arrow"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li">News Letters</li>
+            <li class="sub_dropdown_li">Opinions</li>
+            <li class="sub_dropdown_li">Survey & Reports</li>
+            <li class="sub_dropdown_li">Videos</li>
+          </ul>
+        </li>
+        <li><div class="m">Impack Stories<span class="arrow"></span></li></div>
+        <li>
+          <div class="m">Media<span class="arrow"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li">Media Reports</li>
+            <li class="sub_dropdown_li">Press Releases</li>
+            <li class="sub_dropdown_li">Events</li>
+          </ul>
+        </li>
+        <li>
+          <div class="m">Contact Us<span class="arrow"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li">Careers</li>
+            <li class="sub_dropdown_li">Contact Us</li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <div id="slide" class="overflow-hidden">
+      <div id="track" class="flex flex-row">
+        <img src="https://placehold.co/400x300" alt="" />
+        <img src="./res/2.png" alt="" />
+        <img src="https://placehold.co/400x300" alt="" />
+        <img src="https://placehold.co/400x300" alt="" />
+      </div>
+    </div>
+    <script src="./header.js"></script>
+  </body>
+</html>
